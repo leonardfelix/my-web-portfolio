@@ -12,21 +12,6 @@ import {
 export const NavBar = () => {
 
   const [activeLink, setActiveLink] = useState('home');
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const onScroll = () => {
-      if (window.scrollY > 50) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    }
-
-    window.addEventListener("scroll", onScroll);
-
-    return () => window.removeEventListener("scroll", onScroll);
-  }, [])
 
   const onUpdateActiveLink = (value) => {
     setActiveLink(value);
@@ -34,10 +19,10 @@ export const NavBar = () => {
 
   return (
     <Router>
-      <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
+      <Navbar expand="md" className="scrolled">
         <Container>
           <Navbar.Brand href="/">
-            <img src={logo} alt="Logo" />
+            <h1 className="navbar-brand-text">Leonard Felix Sadewa Siahilan</h1>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span className="navbar-toggler-icon"></span>
@@ -50,9 +35,8 @@ export const NavBar = () => {
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
-                <a href="#"><img src={navIconLinkedin} alt="" /></a>
-                <a href="#"><img src={navIconGithub} alt="" /></a>
-                {/* <a href="#"><img src={navIcon3} alt="" /></a> */}
+                <a href="https://www.linkedin.com/in/leonard-felix-sadewa-siahilan"><img src={navIconLinkedin} alt="" /></a>
+                <a href="https://github.com/leonardfelix"><img src={navIconGithub} alt="" /></a>
               </div>
               <HashLink to='#connect'>
                 <button className="vvd"><span>Let’s Connect</span></button>

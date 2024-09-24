@@ -4,6 +4,7 @@ import headerImg from "../assets/img/header-img.svg";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import { HashLink } from "react-router-hash-link";
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -11,7 +12,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Web Developer", "Web Designer", "UI/UX Designer" ];
+  const toRotate = [ "Machine Learning Engineer", "Software Developer", "Composer?"  ];
   const period = 2000;
 
   useEffect(() => {
@@ -50,26 +51,30 @@ export const Banner = () => {
   return (
     <section className="banner" id="home">
       <Container>
-        <Row className="aligh-items-center">
-          <Col xs={12} md={6} xl={7}>
+        <Row>
+          <Col xs={12} md={10} xl={8}>
             <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`Hi! I'm Judy`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                  <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
+                <section className="align-element">
+                  <span className="tagline">Welcome to my Portfolio</span>
+                  <h1>{`Hello! I'm Felix, a `}<br /><span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Machine Learning Engineer", "Software Developer", "Composer?" ]'><span className="wrap">{text}</span></span></h1>
+                    <p>Welcome to my website! Showcased here is my porfolio collection of exciting projects that I have done in the past few year ranging from arts to neuroscience.
+                      I'm proficient in various programming languages as well as fields in computer science including software engineering, machine learning, UI design, and presenting those complex terms to general audience.
+                      Outside of computer science I'm also interested in marine science, aviation, and engineering. Moreover, I love learning languages and composing music!  
+                    </p>
+                </section>
               </div>}
             </TrackVisibility>
           </Col>
-          <Col xs={12} md={6} xl={5}>
-            <TrackVisibility>
+          {/* <Col xs={12} md={6} xl={5}> */}
+            {/* <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
                   <img src={headerImg} alt="Header Img"/>
                 </div>}
-            </TrackVisibility>
-          </Col>
+            </TrackVisibility> */}
+          {/* </Col> */}
         </Row>
       </Container>
     </section>

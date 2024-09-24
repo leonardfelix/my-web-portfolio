@@ -92,7 +92,7 @@ nav.navbar {
 }
 nav.navbar.scrolled {
   padding: 0px 0;
-  background-color: #121212;
+  background-color: #04003b;
 }
 nav.navbar a.navbar-brand {
     width: 9%;
@@ -184,6 +184,9 @@ span.navbar-text {
 	height: 100%;
 	position: absolute;
 }
+.navbar-brand-text{
+  color: #ffffff;
+}
 nav.navbar .navbar-toggler:active,
 nav.navbar .navbar-toggler:focus {
 	outline: none;
@@ -233,7 +236,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Banner Css ************/
 .banner {
   margin-top: 0;
-  padding: 260px 0 100px 0;
+  height: 100vh;
+  padding: 260px 0 150px 0;
   background-image: url('./assets/img/banner-bg.png');
   background-position: top center;
   background-size: cover;
@@ -243,14 +247,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 700;
   letter-spacing: 0.8px;
   padding: 8px 10px;
-  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+  background: linear-gradient(90.21deg, rgba(123, 196, 255, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
   border: 1px solid rgba(255, 255, 255, 0.5);
   font-size: 20px;
   margin-bottom: 16px;
   display: inline-block;
 }
 .banner h1 {
-  font-size: 65px;
+  font-size: 55px;
   font-weight: 700;
   letter-spacing: 0.8px;
   line-height: 1;
@@ -258,7 +262,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: block;
 }
 .banner p {
-  color: #B8B8B8;
+  color: #ffffff;
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
@@ -284,6 +288,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .banner img {
   animation: updown 3s linear infinite;
+}
+.banner .align-element{
+  margin-top: 30px;
 }
 @keyframes updown {
     0% {
