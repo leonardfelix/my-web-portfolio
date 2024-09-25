@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import headerImg from "../assets/img/header-img.svg";
+import headerImg from "../assets/img/Media (4).jpeg";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -60,21 +60,21 @@ export const Banner = () => {
                   <span className="tagline">Welcome to my Portfolio</span>
                   <h1>{`Hello! I'm Felix, a `}<br /><span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Machine Learning Engineer", "Software Developer", "Composer?" ]'><span className="wrap">{text}</span></span></h1>
                     <p>Welcome to my website! Showcased here is my porfolio collection of exciting projects that I have done in the past few year ranging from arts to neuroscience.
-                      I'm proficient in various programming languages as well as fields in computer science including software engineering, machine learning, UI design, and presenting those complex terms to general audience.
+                      I'm proficient in various programming languages as well as fields in computer science including software engineering, machine learning, DevOps, and presenting those complex terms to general audience.
                       Outside of computer science I'm also interested in marine science, aviation, and engineering. Moreover, I love learning languages and composing music!  
                     </p>
                 </section>
               </div>}
             </TrackVisibility>
           </Col>
-          {/* <Col xs={12} md={6} xl={5}> */}
-            {/* <TrackVisibility>
+          <Col xs={12} md={6} xl={3}>
+            <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
                   <img src={headerImg} alt="Header Img"/>
                 </div>}
-            </TrackVisibility> */}
-          {/* </Col> */}
+            </TrackVisibility>
+          </Col>
         </Row>
       </Container>
     </section>
