@@ -29,7 +29,12 @@ jobs:
         run: |
              npm run build
              npm install gh-pages --save-dev
-        
+             
+      - name: Configure Git user
+        run: |
+          git config user.email "${{ secrets.GIT_CONFIG_EMAIL }}"
+          git config user.name "${{ secrets.GIT_CONFIG_NAME }}"
+          
       # Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         env:
