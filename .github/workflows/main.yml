@@ -34,7 +34,6 @@ jobs:
         run: |
           git config user.email "${{ secrets.GIT_CONFIG_EMAIL }}"
           git config user.name "${{ secrets.GIT_CONFIG_NAME }}"
-          git remote add origin https://github.com/leonardfelix/my-web-portfolio.git
         
       # Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
