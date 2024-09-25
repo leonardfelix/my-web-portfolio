@@ -27,14 +27,12 @@ jobs:
       # Build the React app
       - name: Build the app
         run: npm run build
-
-      - name: Configure Git user
-        run: |
-          git config --global user.name "leonardfelix"
-          git config --global user.email "leonardfelix002@gmail.com"
-          
+        
       # Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
-        run: npm run deploy
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        uses: leonardfelix/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: .
+          clean: false
+          single-commit: true
