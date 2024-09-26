@@ -4,10 +4,19 @@ import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
+import hybridIllustration from "../assets/img/projects/neuroscience/hybrid illustration.png"
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
 export const Projects = () => {
+
+  const neuroscience = [
+    {
+      title: "Hybrid Model Tracking Perfomance Illustration",
+      description: "This figure shows the keypoints tracked (green dots) on a larval zebrafish using the developed Hybrid model on an 8-frame interval.",
+      imgUrl: hybridIllustration,
+    },
+  ];
 
   const projects = [
     {
@@ -65,18 +74,20 @@ export const Projects = () => {
                       <Nav.Link eventKey="third">Mutuals</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="fourth">Personal Website</Nav.Link>
+                      <Nav.Link eventKey="fourth">Rocket Telemetry GUI</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="fifth">Symphony, Op. 1</Nav.Link>
+                      <Nav.Link eventKey="fifth">Personal Website</Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item>
+                      <Nav.Link eventKey="sixth">Symphony, Op. 1</Nav.Link>
                     </Nav.Item>
                   </Nav>
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                     <Tab.Pane eventKey="first">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
-                      <Row>
+                    <Row className="justify-content-center">
                         {
-                          projects.map((project, index) => {
+                          neuroscience.map((project, index) => {
                             return (
                               <ProjectCard
                                 key={index}
@@ -86,6 +97,12 @@ export const Projects = () => {
                           })
                         }
                       </Row>
+                    <p>
+                      This computer vision project with the full title of "Self-supervised Pose Estimation of Larval Zebrafish for Behavioural Quantification in Neuroscience" was my Honours research project completed while studying at The Australian National University.
+                      <br/><br/>Together with 2 of my supervisors, we focus on developing a pipeline to track semantically meaningful keypoints from a larval zebrafish, since quantifying their behaviour can give us insights into the biological computation happening in the brain. Traditional approaches and manual labelling are tedious and are susceptible to error. Therefore this project developed a self-supervised pose estimation model that requires minimal user annotation. We named it the Hybrid model since it is inspired by and uses techniques from several well-established human and animal pose estimations.
+                      <br/><br/>The main tools used for this pose estimation project include Pytorch for creating CNN(Convolutional Neural Network); Torchvision for image transformation; and Weights and Biases to monitor and visualise the model output as it trains. Due to the high computing resources needed to train this model, code is developed and executed on a Linux-based HPC(High-Performance Computing) environment on a computing cluster that uses Sylabs singularity containerisation.  This environment is accessed and utilised using SSH and Slurm scripts.
+                    </p>
+                     
                     </Tab.Pane>
                     <Tab.Pane eventKey="second">
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
@@ -97,6 +114,9 @@ export const Projects = () => {
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
                     </Tab.Pane>
                     <Tab.Pane eventKey="fifth">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                    </Tab.Pane>
+                    <Tab.Pane eventKey="sixth">
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
                     </Tab.Pane>
                   </Tab.Content>
