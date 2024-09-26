@@ -8,6 +8,7 @@ import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 // import figures for project
 import hybridIllustration from "../assets/img/projects/neuroscience/hybrid illustration.png";
+import sweep from "../assets/img/projects/neuroscience/sweep.png"
 import mobile from "../assets/img/projects/mutuals/mobile.jpg"
 import register from "../assets/img/projects/mutuals/register.png"
 import recommendation from "../assets/img/projects/mutuals/recommended.png"
@@ -16,25 +17,30 @@ export const Projects = () => {
 
   const neuroscience = [
     {
-      title: "Hybrid Model Tracking Perfomance Illustration",
+      title: "An Illustration of The Hybrid Model Tracking Perfomance",
       description: "This figure shows the keypoints tracked (green dots) on a larval zebrafish using the developed Hybrid model on an 8-frame interval.",
       imgUrl: hybridIllustration,
+    },
+    {
+      title: "The Hyperparameter Tuning Process Visualised on Weights and Biases",
+      description: "Represented in this picture is the stage of the Hybrid model hyperparameter tuning, done through the Weights and Biases platform using the Bayesian sweep feature. Seven models are trained with various hyperparameter values shown on the bottom chart, with their correlation to the model's accuracy depicted in the two charts above.",
+      imgUrl: sweep,
     },
   ];
   const mutuals = [
     {
-      title: "Example Registration Page",
-      description: "This image shows an example registration page for a person named Francis. Francis wanted to register for mutuals and was prompted with various fields to fill in such as full name and social media account. Optionally, he could also tell his hobbies which will be useful for finding mutual friends.",
+      title: "A Registration Page Example",
+      description: "This image shows an example registration page for a person named Francis. Francis wanted to register for mutuals and was prompted with various fields to fill in such as full name and social media account. Optionally, he could also tell his interests which will be useful for finding mutual friends.",
       imgUrl: register,
     },
     {
-      title: "Example Recommendation Page",
-      description: "",
+      title: "A Recommendation Page Example",
+      description: "This figure shows the Mutuals app recommendation page to find people with similar interests. In this example, Mark, a user who registered with Mutuals, saw Francis on his recommendation page because they have the same interest in documentary, romance, and concerts. ",
       imgUrl: recommendation,
     },
     {
-      title: "Hybrid Model Tracking Perfomance Illustration",
-      description: "",
+      title: "The Mobile Version of Mutuals",
+      description: "As development continued, Mutuals made its way to the mobile platform. This image shows the homepage of Mutuals on a modern smartphone.",
       imgUrl: mobile,
     },
   ];
@@ -100,7 +106,7 @@ export const Projects = () => {
                       <Nav.Link eventKey="fifth">Personal Website</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="sixth">Symphony, Op. 1</Nav.Link>
+                      <Nav.Link eventKey="sixth">Symphony No. 1, Op. 1</Nav.Link>
                     </Nav.Item>
                   </Nav>
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>

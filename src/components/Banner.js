@@ -57,7 +57,7 @@ export const Banner = () => {
                 <section className="align-element">
                   <span className="tagline">Welcome to my Portfolio</span>
                   <h1>{`Hello! I'm Felix, a `}<br /><span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Machine Learning Engineer", "Software Developer", "Composer?" ]'><span className="wrap">{text}</span></span></h1>
-                    <p>Welcome to my website! Showcased here is my porfolio collection of exciting projects that I have done in the past few year ranging from arts to neuroscience.
+                    <p>Welcome to my website! Showcased here is a museum of my porfolio collection on exciting projects that I have done in the past few year ranging from arts to neuroscience.
                       I'm proficient in various programming languages as well as fields in computer science including software engineering, machine learning, DevOps, and presenting those complex terms to general audience.
                       Outside of computer science I'm also interested in marine science, aviation, and engineering. Moreover, I love learning languages and composing music!  
                     </p>
