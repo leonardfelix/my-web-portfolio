@@ -1,10 +1,8 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import headerImg from "../assets/img/Media (4).jpeg";
-import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
-import { HashLink } from "react-router-hash-link";
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -52,14 +50,14 @@ export const Banner = () => {
     <section className="banner" id="home">
       <Container>
         <Row>
-          <Col xs={12} md={10} xl={8}>
+          <Col xs={8} md={8} xl={8}>
             <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <section className="align-element">
                   <span className="tagline">Welcome to my Portfolio</span>
                   <h1>{`Hello! I'm Felix, a `}<br /><span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Machine Learning Engineer", "Software Developer", "Composer?" ]'><span className="wrap">{text}</span></span></h1>
-                    <p>Welcome to my website! Showcased here is my porfolio collection of exciting projects that I have done in the past few year ranging from arts to neuroscience.
+                    <p>Welcome to my website! Showcased here is a museum of my porfolio collection on exciting projects that I have done in the past few year ranging from arts to neuroscience.
                       I'm proficient in various programming languages as well as fields in computer science including software engineering, machine learning, DevOps, and presenting those complex terms to general audience.
                       Outside of computer science I'm also interested in marine science, aviation, and engineering. Moreover, I love learning languages and composing music!  
                     </p>
@@ -67,7 +65,7 @@ export const Banner = () => {
               </div>}
             </TrackVisibility>
           </Col>
-          <Col xs={12} md={6} xl={3}>
+          <Col xs={3} md={3} xl={3}>
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
