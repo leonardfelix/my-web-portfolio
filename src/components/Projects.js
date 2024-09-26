@@ -4,9 +4,13 @@ import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
-import hybridIllustration from "../assets/img/projects/neuroscience/hybrid illustration.png"
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+// import figures for project
+import hybridIllustration from "../assets/img/projects/neuroscience/hybrid illustration.png";
+import mobile from "../assets/img/projects/mutuals/mobile.jpg"
+import register from "../assets/img/projects/mutuals/register.png"
+import recommendation from "../assets/img/projects/mutuals/recommended.png"
 
 export const Projects = () => {
 
@@ -15,6 +19,23 @@ export const Projects = () => {
       title: "Hybrid Model Tracking Perfomance Illustration",
       description: "This figure shows the keypoints tracked (green dots) on a larval zebrafish using the developed Hybrid model on an 8-frame interval.",
       imgUrl: hybridIllustration,
+    },
+  ];
+  const mutuals = [
+    {
+      title: "Example Registration Page",
+      description: "This image shows an example registration page for a person named Francis. Francis wanted to register for mutuals and was prompted with various fields to fill in such as full name and social media account. Optionally, he could also tell his hobbies which will be useful for finding mutual friends.",
+      imgUrl: register,
+    },
+    {
+      title: "Example Recommendation Page",
+      description: "",
+      imgUrl: recommendation,
+    },
+    {
+      title: "Hybrid Model Tracking Perfomance Illustration",
+      description: "",
+      imgUrl: mobile,
     },
   ];
 
@@ -60,8 +81,7 @@ export const Projects = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
                 <h2>Projects</h2>
-                <p>During the past few years I'm lucky to be able to learn and collaborate with brilliant minds to develop these projects. <br /><br />
-                With the knowledge I have obtained and the eagerness to learn more, I also dive into some personal projects to sharpen my skills further. </p>
+                <p>During the past few years I'm lucky to be able to learn and collaborate with brilliant minds to develop these projects. With the knowledge I have obtained and the eagerness to learn more, I also dive into some personal projects to sharpen my skills further. </p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
@@ -85,6 +105,7 @@ export const Projects = () => {
                   </Nav>
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                     <Tab.Pane eventKey="first">
+                    <h3>Animal Pose Estimation</h3>
                     <Row className="justify-content-center">
                         {
                           neuroscience.map((project, index) => {
@@ -99,7 +120,7 @@ export const Projects = () => {
                       </Row>
                     <p>
                       This computer vision project with the full title of "Self-supervised Pose Estimation of Larval Zebrafish for Behavioural Quantification in Neuroscience" was my Honours research project completed while studying at The Australian National University.
-                      <br/><br/>Together with 2 of my supervisors, we focus on developing a pipeline to track semantically meaningful keypoints from a larval zebrafish, since quantifying their behaviour can give us insights into the biological computation happening in the brain. Traditional approaches and manual labelling are tedious and are susceptible to error. Therefore this project developed a self-supervised pose estimation model that requires minimal user annotation. We named it the Hybrid model since it is inspired by and uses techniques from several well-established human and animal pose estimations.
+                      <br/><br/>Together with 2 of my supervisors, we focus on developing a pipeline to track semantically meaningful keypoints from a larval zebrafish, since quantifying their behaviour can give us insights into the biological computation happening in the brain. Traditional approaches and manual labelling are tedious and are susceptible to error. The rise of AI and computer vision allows us to automate this process with popular software packages using a supervised approach as a method to quantify animal movements. However, this still requires a large amount of annotated dataset and doesn't generalise well between animal species. Therefore, this project developed a self-supervised pose estimation model that requires minimal user annotation. We named it the Hybrid model since it is inspired by and uses techniques from several well-established human and animal pose estimations.
                       <br/><br/>The main tools used for this pose estimation project include Pytorch for creating CNN(Convolutional Neural Network); Torchvision for image transformation; and Weights and Biases to monitor and visualise the model output as it trains. Due to the high computing resources needed to train this model, code is developed and executed on a Linux-based HPC(High-Performance Computing) environment on a computing cluster that uses Sylabs singularity containerisation.  This environment is accessed and utilised using SSH and Slurm scripts.
                     </p>
                      
@@ -107,9 +128,28 @@ export const Projects = () => {
                     <Tab.Pane eventKey="second">
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
                     </Tab.Pane>
+
                     <Tab.Pane eventKey="third">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                    <h3>Mutuals</h3>
+                    <Row className="justify-content-center">
+                        {
+                          mutuals.map((project, index) => {
+                            return (
+                              <ProjectCard
+                                key={index}
+                                {...project}
+                                />
+                            )
+                          })
+                        }
+                      </Row>
+                      <p>
+                      The idea for Mutuals comes from the events of the Covid-19 lockdown. People are confined to their homes, and normal social interaction isn't feasible due to the imposition of social distancing. Therefore, this project app is developed by myself alongside several amazing colleagues, encouraging online social interactions and deterring feelings of isolation. 
+                      <br/><br/>The web application consists of features commonly found in other online social platforms such as user registration, login authentication, and profile editing. The main feature of this app is to give friend suggestions between registered users who have the same interest in initiating their connection since people with the same interest are more likely to get along with each other. Users can select the person that they want to interact with through the main friend suggestion page or by a randomised pick that the app makes.
+                      <br/><br/>Mutuals was developed using the Django framework which is then deployed on Heroku. At a later stage, this app was extended to a mobile platform using Dart on Flutter framework. Throughout the process, I was responsible for creating some key features including friend suggestions, Heroku deployment, and various other developments in the Django MTV(Model, Template, View) architecture. I cherish this project as this is one of my early learning experiences with collaborative development and the utilisation of Github as a version control software. As well as platform-based development and application deployment.
+                      </p>
                     </Tab.Pane>
+
                     <Tab.Pane eventKey="fourth">
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
                     </Tab.Pane>

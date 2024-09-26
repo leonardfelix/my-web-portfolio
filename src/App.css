@@ -101,7 +101,7 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
   color: #fff !important;
   letter-spacing: 0.8px;
-  padding: 0 25px;
+  padding: 0 2.5vh;
   font-size: 18px;
   opacity: 0.75;
 }
@@ -115,7 +115,7 @@ span.navbar-text {
 }
 .social-icon {
     display: inline-block;
-    margin-left: 14px;
+    margin-left: 2vh;
 }
 .social-icon a {
     width: 42px;
@@ -237,7 +237,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner {
   margin-top: 0;
   height: 100vh;
-  padding: 260px 0 150px 0;
+  padding: 25vh 0 0 0;
   background-image: url('./assets/img/banner-bg.png');
   background-position: top center;
   background-size: cover;
@@ -359,6 +359,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	font-weight: 700;
   text-align: center;
 }
+.project h3 {
+  text-align: center;
+  padding-bottom: 30px;
+}
 .project p {
   color: #B8B8B8;
   font-size: 18px;
@@ -367,10 +371,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin: 14px auto 30px auto;
   text-align: center;
   width: 56%;
+  padding-top: 30px;
 }
 .projectcard p {
   font-size: 15px;
-
+  color: #ffffff;
 }
 .project .nav.nav-pills {
   width: 100%;
