@@ -29,16 +29,16 @@ export const NavBar = () => {
             <Nav className="ms-auto">
               <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
               <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
-              <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link>
+              {/* <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link> */}
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
                 <a href="https://www.linkedin.com/in/leonard-felix-sadewa-siahilan"><img src={navIconLinkedin} alt="" /></a>
                 <a href="https://github.com/leonardfelix"><img src={navIconGithub} alt="" /></a>
               </div>
-              <HashLink to='#connect'>
+              {/* <HashLink to='#connect'>
                 <button className="vvd"><span>Let’s Connect</span></button>
-              </HashLink>
+              </HashLink> */}
             </span>
           </Navbar.Collapse>
         </Container>
