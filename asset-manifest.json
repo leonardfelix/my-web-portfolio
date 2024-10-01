@@ -1,13 +1,14 @@
 {
   "files": {
     "main.css": "/my-web-portfolio/static/css/main.cd7c1325.css",
-    "main.js": "/my-web-portfolio/static/js/main.d459ff1f.js",
+    "main.js": "/my-web-portfolio/static/js/main.02910cff.js",
     "static/js/453.298f5782.chunk.js": "/my-web-portfolio/static/js/453.298f5782.chunk.js",
     "static/media/banner-bg.png": "/my-web-portfolio/static/media/banner-bg.aa9783c459c69cf0b03f.png",
+    "static/media/homepage.png": "/my-web-portfolio/static/media/homepage.5c431b71bf60ce195ac2.png",
     "static/media/color-sharp.png": "/my-web-portfolio/static/media/color-sharp.bea361cfef80fefc2d1e.png",
     "static/media/color-sharp2.png": "/my-web-portfolio/static/media/color-sharp2.c87586c6c2f549cb4aa6.png",
-    "static/media/hybrid illustration.png": "/my-web-portfolio/static/media/hybrid illustration.b234bd7415913434ecf5.png",
     "static/media/mobile.jpg": "/my-web-portfolio/static/media/mobile.d8aeade7fdbf1b8e2353.jpg",
+    "static/media/age chart.png": "/my-web-portfolio/static/media/age chart.733a9596f9f3f6520de8.png",
     "static/media/sweep.png": "/my-web-portfolio/static/media/sweep.02f39f95399616763ac7.png",
     "static/media/Media (4).jpeg": "/my-web-portfolio/static/media/Media (4).b3b59645dbdd1876e400.jpeg",
     "static/media/register.png": "/my-web-portfolio/static/media/register.a3f0f3610a12684a03c1.png",
@@ -33,11 +34,11 @@
     "static/media/arrow2.svg": "/my-web-portfolio/static/media/arrow2.b3d03e1b04ec1904a5658aea5776433c.svg",
     "static/media/arrow1.svg": "/my-web-portfolio/static/media/arrow1.1088f8313e5637897aff2414e5938141.svg",
     "main.cd7c1325.css.map": "/my-web-portfolio/static/css/main.cd7c1325.css.map",
-    "main.d459ff1f.js.map": "/my-web-portfolio/static/js/main.d459ff1f.js.map",
+    "main.02910cff.js.map": "/my-web-portfolio/static/js/main.02910cff.js.map",
     "453.298f5782.chunk.js.map": "/my-web-portfolio/static/js/453.298f5782.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cd7c1325.css",
-    "static/js/main.d459ff1f.js"
+    "static/js/main.02910cff.js"
   ]
 }
