@@ -7,24 +7,34 @@ import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 // import figures for project
-import hybridIllustration from "../assets/img/projects/neuroscience/hybrid illustration.png";
-import sweep from "../assets/img/projects/neuroscience/sweep.png"
-import mobile from "../assets/img/projects/mutuals/mobile.jpg"
-import register from "../assets/img/projects/mutuals/register.png"
-import recommendation from "../assets/img/projects/mutuals/recommended.png"
+import sweep from "../assets/img/projects/neuroscience/sweep.png";
+
+import homePage from "../assets/img/projects/datavis/homepage.png";
+import ageChart from "../assets/img/projects/datavis/age chart.png";
+
+import mobile from "../assets/img/projects/mutuals/mobile.jpg";
+import register from "../assets/img/projects/mutuals/register.png";
+import recommendation from "../assets/img/projects/mutuals/recommended.png";
 
 export const Projects = () => {
 
   const neuroscience = [
     {
-      title: "An Illustration of The Hybrid Model Tracking Perfomance",
-      description: "This figure shows the keypoints tracked (green dots) on a larval zebrafish using the developed Hybrid model on an 8-frame interval.",
-      imgUrl: hybridIllustration,
-    },
-    {
       title: "The Hyperparameter Tuning Process Visualised on Weights and Biases",
       description: "Represented in this picture is the stage of the Hybrid model hyperparameter tuning, done through the Weights and Biases platform using the Bayesian sweep feature. Seven models are trained with various hyperparameter values shown on the bottom chart, with their correlation to the model's accuracy depicted in the two charts above.",
       imgUrl: sweep,
+    },
+  ];
+  const datavis = [
+    {
+      title: "The Hompage of The Data Visualiser",
+      description: "",
+      imgUrl: homePage,
+    },
+    {
+      title: "An Example Chart Displaying Age",
+      description: "",
+      imgUrl: ageChart,
     },
   ];
   const mutuals = [
@@ -132,6 +142,19 @@ export const Projects = () => {
                      
                     </Tab.Pane>
                     <Tab.Pane eventKey="second">
+                    <h3>National Portrait Gallery (NPG) Data Visualisation</h3>
+                    <Row className="justify-content-center">
+                        {
+                          datavis.map((project, index) => {
+                            return (
+                              <ProjectCard
+                                key={index}
+                                {...project}
+                                />
+                            )
+                          })
+                        }
+                      </Row>
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
                     </Tab.Pane>
 
