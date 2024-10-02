@@ -7,7 +7,6 @@ import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 // import figures for project
-import sweep from "../assets/img/projects/neuroscience/sweep.png";
 
 import homePage from "../assets/img/projects/datavis/homepage.png";
 import ageChart from "../assets/img/projects/datavis/age chart.png";
@@ -17,14 +16,12 @@ import mobile from "../assets/img/projects/mutuals/mobile.jpg";
 import register from "../assets/img/projects/mutuals/register.png";
 import recommendation from "../assets/img/projects/mutuals/recommended.png";
 
+import homeGUI from "../assets/img/projects/rocketGui/app example.png";
+
 export const Projects = () => {
 
   const neuroscience = [
-    {
-      title: "The Hyperparameter Tuning Process Visualised on Weights and Biases",
-      description: "Represented in this picture is the stage of the Hybrid model hyperparameter tuning, done through the Weights and Biases platform using the Bayesian sweep feature. Seven models are trained with various hyperparameter values shown on the bottom chart, with their correlation to the model's accuracy depicted in the two charts above.",
-      imgUrl: sweep,
-    },
+
   ];
   const datavis = [
     {
@@ -58,6 +55,13 @@ export const Projects = () => {
       title: "The Mobile Version of Mutuals",
       description: "As development continued, Mutuals made its way to the mobile platform. This image shows the homepage of Mutuals on a modern smartphone.",
       imgUrl: mobile,
+    },
+  ];
+  const rocketGUI = [
+    {
+      title: "The Rocket Telemetry Data Application",
+      description: "The appearance of the application on a Windows Computer. Using simulated data, a few charts can be observed on the right side representing data such as altitude and gyro concerning time. Other processed statistics such as packet type and software state are shown on the bottom half.",
+      imgUrl: homeGUI,
     },
   ];
 
@@ -141,8 +145,7 @@ export const Projects = () => {
                         }
                       </Row>
                     <p>
-                      This computer vision project with the full title of "Self-supervised Pose Estimation of Larval Zebrafish for Behavioural Quantification in Neuroscience" was my Honours research project completed while studying at The Australian National University.
-                      <br/><br/>Together with 2 of my supervisors, we focus on developing a pipeline to track semantically meaningful keypoints from a larval zebrafish, since quantifying their behaviour can give us insights into the biological computation happening in the brain. Traditional approaches and manual labelling are tedious and are susceptible to error. The rise of AI and computer vision allows us to automate this process with popular software packages using a supervised approach as a method to quantify animal movements. However, this still requires a large amount of annotated dataset and doesn't generalise well between animal species. Therefore, this project developed a self-supervised pose estimation model that requires minimal user annotation. We named it the Hybrid model since it is inspired by and uses techniques from several well-established human and animal pose estimations.
+                     
                       <br/><br/>The main tools used for this pose estimation project include Pytorch for creating CNN(Convolutional Neural Network); Torchvision for image transformation; and Weights and Biases to monitor and visualise the model output as it trains. Due to the high computing resources needed to train this model, code is developed and executed on a Linux-based HPC(High-Performance Computing) environment on a computing cluster that uses Sylabs singularity containerisation.  This environment is accessed and utilised using SSH and Slurm scripts.
                     </p>
                      
@@ -191,7 +194,24 @@ export const Projects = () => {
                     </Tab.Pane>
 
                     <Tab.Pane eventKey="fourth">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                    <h3>Rocket Telemetry GUI (Graphical User Interface)</h3>
+                    <Row className="justify-content-center">
+                        {
+                          rocketGUI.map((project, index) => {
+                            return (
+                              <ProjectCard
+                                key={index}
+                                {...project}
+                                />
+                            )
+                          })
+                        }
+                      </Row>
+                      <p>
+                      Charts and processed data are more comprehensible and appealing to look at compared to raw data. Working together with another colleague as a part of an aerospace robotics team, it was our responsibility to create this software to represent the university in the upcoming CANSAT 2022 competition.
+                      <br/><br/>This project provides a desktop application to extract and visualise rocket telemetry data such as altitude, acceleration, and gyro. This data comes from an actual rocket payload coded in an Arduino microcontroller, which will then continuously send CSV data to the ground receiver as input to the application. Furthermore, several control features are also implemented, for instance, the port connection selection, which allows for ease of configuration in connecting the input device. 
+                      <br/><br/>This application was built using Windows Presentation Foundation (WPF) .NET comprising C# and XAML. The structure follows conventional WPF application using MVVM (Model-view-viewmodel) architecture. The graph was created using the OxyPlot library and is updated whenever the property value changes. Moreover, a limit was set with a maximum number of points to be displayed on the chart. In case it exceeds the number of points, the chart will only display the most recent points to keep the scale and avoid clutter.
+                      </p>
                     </Tab.Pane>
                     <Tab.Pane eventKey="fifth">
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
