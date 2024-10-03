@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-web-portfolio/static/css/main.cd7c1325.css",
-    "main.js": "/my-web-portfolio/static/js/main.a9561b49.js",
+    "main.css": "/my-web-portfolio/static/css/main.fb60aed2.css",
+    "main.js": "/my-web-portfolio/static/js/main.386030d9.js",
     "static/js/453.298f5782.chunk.js": "/my-web-portfolio/static/js/453.298f5782.chunk.js",
     "static/media/banner-bg.png": "/my-web-portfolio/static/media/banner-bg.aa9783c459c69cf0b03f.png",
     "static/media/app example.png": "/my-web-portfolio/static/media/app example.87be96cec5b116db2ff3.png",
@@ -15,6 +15,7 @@
     "static/media/register.png": "/my-web-portfolio/static/media/register.a3f0f3610a12684a03c1.png",
     "static/media/recommended.png": "/my-web-portfolio/static/media/recommended.be00254c7d7dbf22e3bf.png",
     "static/media/CentraNo2-Bold.ttf": "/my-web-portfolio/static/media/CentraNo2-Bold.2faff7f7d3fc92a2fcd9.ttf",
+    "static/media/website cicd.png": "/my-web-portfolio/static/media/website cicd.61ff0b56ea5bbaf5ec08.png",
     "static/media/CentraNo2-Medium.ttf": "/my-web-portfolio/static/media/CentraNo2-Medium.f94be5b326d78bb32b95.ttf",
     "static/media/CentraNo2-Book.ttf": "/my-web-portfolio/static/media/CentraNo2-Book.2b143fa4b734a3584043.ttf",
     "static/media/project-img1.png": "/my-web-portfolio/static/media/project-img1.d593db3f12901bc685c2.png",
@@ -34,12 +35,12 @@
     "static/media/linkedin.svg": "/my-web-portfolio/static/media/linkedin.dff40ae802524d8fc0cbce3f312abe4f.svg",
     "static/media/arrow2.svg": "/my-web-portfolio/static/media/arrow2.b3d03e1b04ec1904a5658aea5776433c.svg",
     "static/media/arrow1.svg": "/my-web-portfolio/static/media/arrow1.1088f8313e5637897aff2414e5938141.svg",
-    "main.cd7c1325.css.map": "/my-web-portfolio/static/css/main.cd7c1325.css.map",
-    "main.a9561b49.js.map": "/my-web-portfolio/static/js/main.a9561b49.js.map",
+    "main.fb60aed2.css.map": "/my-web-portfolio/static/css/main.fb60aed2.css.map",
+    "main.386030d9.js.map": "/my-web-portfolio/static/js/main.386030d9.js.map",
     "453.298f5782.chunk.js.map": "/my-web-portfolio/static/js/453.298f5782.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cd7c1325.css",
-    "static/js/main.a9561b49.js"
+    "static/css/main.fb60aed2.css",
+    "static/js/main.386030d9.js"
   ]
 }
