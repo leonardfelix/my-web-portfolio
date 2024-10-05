@@ -1,17 +1,20 @@
 {
   "files": {
-    "main.css": "/my-web-portfolio/static/css/main.fb60aed2.css",
-    "main.js": "/my-web-portfolio/static/js/main.386030d9.js",
+    "main.css": "/my-web-portfolio/static/css/main.60d940e4.css",
+    "main.js": "/my-web-portfolio/static/js/main.e69c1e8f.js",
     "static/js/453.298f5782.chunk.js": "/my-web-portfolio/static/js/453.298f5782.chunk.js",
     "static/media/banner-bg.png": "/my-web-portfolio/static/media/banner-bg.aa9783c459c69cf0b03f.png",
     "static/media/app example.png": "/my-web-portfolio/static/media/app example.87be96cec5b116db2ff3.png",
     "static/media/homepage.png": "/my-web-portfolio/static/media/homepage.5c431b71bf60ce195ac2.png",
     "static/media/color-sharp.png": "/my-web-portfolio/static/media/color-sharp.bea361cfef80fefc2d1e.png",
     "static/media/color-sharp2.png": "/my-web-portfolio/static/media/color-sharp2.c87586c6c2f549cb4aa6.png",
+    "static/media/pizza recipe.png": "/my-web-portfolio/static/media/pizza recipe.12d5401d227fe2e0e6e9.png",
     "static/media/trello board.png": "/my-web-portfolio/static/media/trello board.7806a40e72fd416ee1fb.png",
+    "static/media/dish search.png": "/my-web-portfolio/static/media/dish search.6f82e2440fd84c7d53de.png",
     "static/media/mobile.jpg": "/my-web-portfolio/static/media/mobile.d8aeade7fdbf1b8e2353.jpg",
     "static/media/age chart.png": "/my-web-portfolio/static/media/age chart.733a9596f9f3f6520de8.png",
     "static/media/Media (4).jpeg": "/my-web-portfolio/static/media/Media (4).b3b59645dbdd1876e400.jpeg",
+    "static/media/publish recipe.png": "/my-web-portfolio/static/media/publish recipe.818540089d4c5e788fd2.png",
     "static/media/register.png": "/my-web-portfolio/static/media/register.a3f0f3610a12684a03c1.png",
     "static/media/recommended.png": "/my-web-portfolio/static/media/recommended.be00254c7d7dbf22e3bf.png",
     "static/media/CentraNo2-Bold.ttf": "/my-web-portfolio/static/media/CentraNo2-Bold.2faff7f7d3fc92a2fcd9.ttf",
@@ -35,12 +38,12 @@
     "static/media/linkedin.svg": "/my-web-portfolio/static/media/linkedin.dff40ae802524d8fc0cbce3f312abe4f.svg",
     "static/media/arrow2.svg": "/my-web-portfolio/static/media/arrow2.b3d03e1b04ec1904a5658aea5776433c.svg",
     "static/media/arrow1.svg": "/my-web-portfolio/static/media/arrow1.1088f8313e5637897aff2414e5938141.svg",
-    "main.fb60aed2.css.map": "/my-web-portfolio/static/css/main.fb60aed2.css.map",
-    "main.386030d9.js.map": "/my-web-portfolio/static/js/main.386030d9.js.map",
+    "main.60d940e4.css.map": "/my-web-portfolio/static/css/main.60d940e4.css.map",
+    "main.e69c1e8f.js.map": "/my-web-portfolio/static/js/main.e69c1e8f.js.map",
     "453.298f5782.chunk.js.map": "/my-web-portfolio/static/js/453.298f5782.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fb60aed2.css",
-    "static/js/main.386030d9.js"
+    "static/css/main.60d940e4.css",
+    "static/js/main.e69c1e8f.js"
   ]
 }
