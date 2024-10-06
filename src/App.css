@@ -363,6 +363,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-align: center;
   padding-bottom: 30px;
 }
+.project h4 {
+  text-align: center;
+}
 .project p {
   color: #B8B8B8;
   font-size: 18px;

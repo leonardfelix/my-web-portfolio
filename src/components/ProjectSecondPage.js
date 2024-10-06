@@ -11,6 +11,13 @@ import publishRecipe from "../assets/img/projects/dish/publish recipe.png";
 import dishSearch from "../assets/img/projects/dish/dish search.png";
 import pizzaRecipe from "../assets/img/projects/dish/pizza recipe.png";
 
+import dataDiagram from "../assets/img/projects/database/database diagram.png";
+import vaccineDat from "../assets/img/projects/database/vaccine data.png";
+import distribution from "../assets/img/projects/database/distribution details.png";
+
+import music from "../assets/img/projects/music/treble clef.svg";
+
+
 
 
 export const ProjectSecondPage = () => {
@@ -31,6 +38,25 @@ export const ProjectSecondPage = () => {
         imgUrl: pizzaRecipe,
       },
     ];
+
+    const database = [
+      {
+        title: "The Vaccine Instances",
+        description: "This figure details one of the database tables titled 'Vaccine'. As shown there are 5 distinct vaccines in this instance with their unique primary key and attributes such as name and producer. Approved admin users can also make changes to the data in this table.",
+        imgUrl: vaccineDat,
+      },
+      {
+        title: "A Distribution Record Example",
+        description: "The image shows a data record on the distribution table. This contains attributes such as code, distribution date, and fee. Note that the distribution table is connected to both the vaccine and schedule table with a foreign key. Therefore, schedule data and vaccine type are also shown and could be determined from the distribution.",
+        imgUrl: distribution,
+      },
+      {
+        title: "The Relational Mapping",
+        description: "This diagram depicts the relationship between each of the dataset tables, also known as relational mapping. Each table has its distinct attributes with some of them underlined and bolded representing the primary keys that are unique for every data record. Arrows from one table to another represent the relation of an attribute to a record in another table connected by foreign keys.",
+        imgUrl: dataDiagram,
+      },
+    ];
+
   
     const projects = [
       {
@@ -79,7 +105,7 @@ export const ProjectSecondPage = () => {
             <Nav.Link eventKey="first">DISH</Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link eventKey="second">Database</Nav.Link>
+            <Nav.Link eventKey="second">COVID-19 Database</Nav.Link>
           </Nav.Item>
           <Nav.Item>
             <Nav.Link eventKey="secondlast">Marine Animal Tracking</Nav.Link>
@@ -111,9 +137,23 @@ export const ProjectSecondPage = () => {
           
           </Tab.Pane>
           <Tab.Pane eventKey="second">
-          <h3>Database</h3>
-
+          <h3>COVID-19 Database</h3>
+          <Row className="justify-content-center">
+                {
+                  database.map((project, index) => {
+                    return (
+                      <ProjectCard
+                        key={index}
+                        {...project}
+                        />
+                    )
+                  })
+                }
+              </Row>
             <p>
+            A database management project that was developed with a few of my colleagues during university times. This database revolves around COVID-19 vaccination tracking which encompasses aspects such as vaccination schedules, health facilities, and vaccination cards. 
+            <br /><br />Using PostgreSQL as a relational database, we're able to model relationships across different data tables. Primary keys allow each record to be uniquely identified and foreign keys to link 2 related records from other tables, both of these are implemented in the database management system (DBMS). As a result, I'm familiar with working using pgAdmin for database management and SQL queries.
+            <br /><br />An application using the Django framework was later developed as an interface to access the DBMS. The app is then deployed to Heroku allowing a web interface that can be accessed by general users.
             </p>
           </Tab.Pane>
 
@@ -128,9 +168,12 @@ export const ProjectSecondPage = () => {
           </Tab.Pane>
           <Tab.Pane eventKey="last">
           <h3>Symphony No. 1, Op. 1</h3>
-         
-            <p>
-            </p>
+          <div style={{ display: "flex", justifyContent: "center"}}>
+            <img src={music} alt="An example image" style={{ width: "20vh" }} />
+          </div>
+            <h4>
+            <br /><br />Something musical is coming soon.
+            </h4>
           </Tab.Pane>
 
         </Tab.Content>

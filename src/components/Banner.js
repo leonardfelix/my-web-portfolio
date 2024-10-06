@@ -62,7 +62,6 @@ export const Banner = () => {
                       I'm proficient in various programming languages as well as fields in computer science including software engineering, machine learning, DevOps, and presenting those complex terms to general audience.
                       Outside of computer science I'm also interested in marine science, aviation, and engineering. Moreover, I love learning languages and composing music!  
                     </p>
-                    <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
                 </section>
               </div>}
             </TrackVisibility>
