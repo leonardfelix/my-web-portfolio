@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-web-portfolio/static/css/main.60d940e4.css",
-    "main.js": "/my-web-portfolio/static/js/main.e69c1e8f.js",
+    "main.css": "/my-web-portfolio/static/css/main.82ea1ccc.css",
+    "main.js": "/my-web-portfolio/static/js/main.2edb3eb4.js",
     "static/js/453.298f5782.chunk.js": "/my-web-portfolio/static/js/453.298f5782.chunk.js",
     "static/media/banner-bg.png": "/my-web-portfolio/static/media/banner-bg.aa9783c459c69cf0b03f.png",
     "static/media/app example.png": "/my-web-portfolio/static/media/app example.87be96cec5b116db2ff3.png",
@@ -16,7 +16,9 @@
     "static/media/Media (4).jpeg": "/my-web-portfolio/static/media/Media (4).b3b59645dbdd1876e400.jpeg",
     "static/media/publish recipe.png": "/my-web-portfolio/static/media/publish recipe.818540089d4c5e788fd2.png",
     "static/media/register.png": "/my-web-portfolio/static/media/register.a3f0f3610a12684a03c1.png",
+    "static/media/distribution details.png": "/my-web-portfolio/static/media/distribution details.4dcc691b2a115dfcb80c.png",
     "static/media/recommended.png": "/my-web-portfolio/static/media/recommended.be00254c7d7dbf22e3bf.png",
+    "static/media/database diagram.png": "/my-web-portfolio/static/media/database diagram.4f92b765a284e54ac7d2.png",
     "static/media/CentraNo2-Bold.ttf": "/my-web-portfolio/static/media/CentraNo2-Bold.2faff7f7d3fc92a2fcd9.ttf",
     "static/media/website cicd.png": "/my-web-portfolio/static/media/website cicd.61ff0b56ea5bbaf5ec08.png",
     "static/media/CentraNo2-Medium.ttf": "/my-web-portfolio/static/media/CentraNo2-Medium.f94be5b326d78bb32b95.ttf",
@@ -24,6 +26,7 @@
     "static/media/project-img1.png": "/my-web-portfolio/static/media/project-img1.d593db3f12901bc685c2.png",
     "static/media/footer-bg.png": "/my-web-portfolio/static/media/footer-bg.7bd67c0f73571d0acc02.png",
     "static/media/project-img2.png": "/my-web-portfolio/static/media/project-img2.2e52097c417f9f1134b0.png",
+    "static/media/vaccine data.png": "/my-web-portfolio/static/media/vaccine data.f5471c8a9d763f1c1df5.png",
     "static/media/project-img3.png": "/my-web-portfolio/static/media/project-img3.675b30d2f975a1bc1d09.png",
     "static/media/contact-img.svg": "/my-web-portfolio/static/media/contact-img.62aa99e0f3b968b5d1ce9eb047f34fc7.svg",
     "static/media/revicons.eot": "/my-web-portfolio/static/media/revicons.a77de540a38981833f9e.eot",
@@ -32,18 +35,19 @@
     "static/media/meter2.svg": "/my-web-portfolio/static/media/meter2.a0050a378a929877ac8144049ee0a1bf.svg",
     "static/media/meter1.svg": "/my-web-portfolio/static/media/meter1.c61a2fc3fdd79d551b751c6c0f890ab6.svg",
     "static/media/meter3.svg": "/my-web-portfolio/static/media/meter3.2eda919df32db1af75a222eb99d3a931.svg",
+    "static/media/treble clef.svg": "/my-web-portfolio/static/media/treble clef.8ae6383862183a99579ab288d2b2f7e8.svg",
     "static/media/github.svg": "/my-web-portfolio/static/media/github.f68353b1036ee0460dd5639cb7916587.svg",
     "static/media/logo.svg": "/my-web-portfolio/static/media/logo.3c6c479cfa1d154dbfccd4d5f91320f4.svg",
     "index.html": "/my-web-portfolio/index.html",
     "static/media/linkedin.svg": "/my-web-portfolio/static/media/linkedin.dff40ae802524d8fc0cbce3f312abe4f.svg",
     "static/media/arrow2.svg": "/my-web-portfolio/static/media/arrow2.b3d03e1b04ec1904a5658aea5776433c.svg",
     "static/media/arrow1.svg": "/my-web-portfolio/static/media/arrow1.1088f8313e5637897aff2414e5938141.svg",
-    "main.60d940e4.css.map": "/my-web-portfolio/static/css/main.60d940e4.css.map",
-    "main.e69c1e8f.js.map": "/my-web-portfolio/static/js/main.e69c1e8f.js.map",
+    "main.82ea1ccc.css.map": "/my-web-portfolio/static/css/main.82ea1ccc.css.map",
+    "main.2edb3eb4.js.map": "/my-web-portfolio/static/js/main.2edb3eb4.js.map",
     "453.298f5782.chunk.js.map": "/my-web-portfolio/static/js/453.298f5782.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.60d940e4.css",
-    "static/js/main.e69c1e8f.js"
+    "static/css/main.82ea1ccc.css",
+    "static/js/main.2edb3eb4.js"
   ]
 }
