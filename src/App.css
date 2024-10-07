@@ -387,6 +387,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .projectcard p {
   font-size: 15px;
   color: #ffffff;
+  text-align: center;
 }
 .project-first{
   padding-bottom: 5vh;

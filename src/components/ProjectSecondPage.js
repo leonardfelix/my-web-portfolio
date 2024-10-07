@@ -1,8 +1,5 @@
 import { Row, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 
 
@@ -14,6 +11,8 @@ import pizzaRecipe from "../assets/img/projects/dish/pizza recipe.png";
 import dataDiagram from "../assets/img/projects/database/database diagram.png";
 import vaccineDat from "../assets/img/projects/database/vaccine data.png";
 import distribution from "../assets/img/projects/database/distribution details.png";
+
+import coverPage from "../assets/img/projects/marineTracking/cover page.jpg";
 
 import music from "../assets/img/projects/music/treble clef.svg";
 
@@ -57,45 +56,15 @@ export const ProjectSecondPage = () => {
       },
     ];
 
-  
-    const projects = [
+    const marineTracking = [
       {
-        title: "Business Startup",
-        description: "Design & Development",
-        imgUrl: projImg1,
+        title: "The Research Proposal Cover Page",
+        description: "This figure shows the cover and first page of the five page proposal document.",
+        imgUrl: coverPage,
       },
-      {
-        title: "Business Startup",
-        description: "Design & Development",
-        imgUrl: projImg2,
-      },
-      {
-        title: "Business Startup",
-        description: "Design & Development",
-        imgUrl: projImg3,
-      },
-      {
-        title: "Business Startup",
-        description: "Design & Development",
-        imgUrl: projImg1,
-      },
-      {
-        title: "Business Startup",
-        description: "Design & Development",
-        imgUrl: projImg2,
-      },
-      {
-        title: "Business Startup",
-        description: "Design & Development",
-        imgUrl: projImg3,
-      },
-    ];
+    ]
 
-    const buttonPress = () => {
-      document.getElementById("marineButton").onclick = function () {
-        window.location.href = "www.google.com";
-    }
-    };
+
     
   
     return (
@@ -151,7 +120,7 @@ export const ProjectSecondPage = () => {
                 }
               </Row>
             <p>
-            A database management project that was developed with a few of my colleagues during university times. This database revolves around COVID-19 vaccination tracking which encompasses aspects such as vaccination schedules, health facilities, and vaccination cards. 
+            A database management project that was developed with a few of my colleagues during university times. This database revolves around a simulation of COVID-19 vaccination tracking which encompasses aspects such as vaccination schedules, health facilities, and vaccination cards. 
             <br /><br />Using PostgreSQL as a relational database, we're able to model relationships across different data tables. Primary keys allow each record to be uniquely identified and foreign keys to link 2 related records from other tables, both of these are implemented in the database management system (DBMS). As a result, I'm familiar with working using pgAdmin for database management and SQL queries.
             <br /><br />An application using the Django framework was later developed as an interface to access the DBMS. The app is then deployed to Heroku allowing a web interface that can be accessed by general users.
             </p>
@@ -159,8 +128,22 @@ export const ProjectSecondPage = () => {
 
           <Tab.Pane eventKey="secondlast">
           <h3>Marine Animal Tracking</h3>
-         
+          <Row className="justify-content-center">
+                {
+                  marineTracking.map((project, index) => {
+                    return (
+                      <ProjectCard
+                        key={index}
+                        {...project}
+                        />
+                    )
+                  })
+                }
+              </Row>
             <p>
+            The ocean depth is breathtaking but also holds countless mysteries. From an early age, I've been captivated by this charming environment and it is one of my lifetime goals to help us understand more about what lies beyond the waves.
+            <br /><br />This research proposal titled "Semi-supervised Vision Based Multiple Objects Tracking on Marine Animals" elaborates on the problem of observing marine animal behaviour, known as focal animal sampling can be tedious and challenging if done manually, especially in rough ocean conditions. Automated tracking with computer vision onboard an autonomous underwater vehicle (AUV) eliminates the risk of human involvement and allows us to explore these harsh environments further. In particular, this research proposes the use of semi-supervised learning that can simply be used by drawing a bounding box around the target without the need for prior labelled training of every marine animal species. This proposed research also focused on social or multiple object tracking to analyse social marine animals such as dolphins and schools of fish.
+            <br /><br />The project proposal was developed during my time at university and was used to propose my Honours project. This allows me to demonstrate my curiosity and scientific research skills in the fields of computer vision, robotics, and marine exploration. 
             </p>
             <Row className="justify-content-center">
             <button onClick={() => window.location.href = "https://drive.google.com/file/d/1yawMkKo9ZE79OSIYKcory8AzzDGe7G1I/view?usp=sharing"}>See Proposal <ArrowRightCircle size={25} /></button>
@@ -169,7 +152,7 @@ export const ProjectSecondPage = () => {
           <Tab.Pane eventKey="last">
           <h3>Symphony No. 1, Op. 1</h3>
           <div style={{ display: "flex", justifyContent: "center"}}>
-            <img src={music} alt="An example image" style={{ width: "20vh" }} />
+            <img src={music} alt="Treble clef" style={{ width: "20vh" }} />
           </div>
             <h4>
             <br /><br />Something musical is coming soon.
