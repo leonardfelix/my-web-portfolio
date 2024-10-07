@@ -106,8 +106,9 @@ export const ProjectFirstPage = () => {
                 }
               </Row>
             <p>
-              
-              <br/><br/>The main tools used for this pose estimation project include Pytorch for creating CNN(Convolutional Neural Network); Torchvision for image transformation; and Weights and Biases to monitor and visualise the model output as it trains. Due to the high computing resources needed to train this model, code is developed and executed on a Linux-based HPC(High-Performance Computing) environment on a computing cluster that uses Sylabs singularity containerisation.  This environment is accessed and utilised using SSH and Slurm scripts.
+            Tracking an animal's detailed anatomical structure throughout a period allows scientists to perform studies such as behavioural analysis and motor kinematic studies. Throughout my Honours year and project, I developed a self-supervised pose-estimation pipeline for animals that requires minimal manual annotation and can track semantically meaningful keypoints. Note that the model uses a self-supervised approach, meaning that it can generate learning elements independently and analyse deep patterns in the data without the need for large labelled training data, as in the case of supervised learning. 
+            <br /><br />The main tools used for this pose estimation project include Pytorch for creating CNN(Convolutional Neural Network); Torchvision for image transformation; and Weights and Biases to monitor and visualise the model output as it trains. Due to the high computing resources needed to train this model, code is developed and executed on a Linux-based HPC(High-Performance Computing) environment on a computing cluster that uses Sylabs singularity containerisation.  This environment is accessed and utilised using SSH and Slurm scripts.
+            <br /><br />I also improved and showed my research skills throughout this project. This encompasses writing a literature review and other thesis sections; demonstrating scientific attitudes; and using LaTeX as a research writing tool and Zotero for reference management. 
             </p>
               
             </Tab.Pane>
