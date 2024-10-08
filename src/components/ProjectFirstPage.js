@@ -3,6 +3,8 @@ import { ProjectCard } from "./ProjectCard";
 
 
 // import figures for project
+import sweep from "../assets/img/projects/neuroscience/sweep.png";
+import anusrc from "../assets/img/projects/neuroscience/anu src.jpg";
 
 import homePage from "../assets/img/projects/datavis/homepage.png";
 import ageChart from "../assets/img/projects/datavis/age chart.png";
@@ -18,11 +20,20 @@ import webDeployement from "../assets/img/projects/personalweb/website cicd.png"
 
 export const ProjectFirstPage = () => {
     const neuroscience = [
-
+      {
+        title: "The Hyperparameter Tuning Process Visualised on Weights and Biases",
+        description: "Represented in this picture is the stage of the model hyperparameter tuning, done through the Weights and Biases platform using the Bayesian sweep feature. Seven models are trained with various hyperparameter values shown on the bottom chart, with their correlation to the model's accuracy depicted in the two charts above.",
+        imgUrl: sweep,
+      },
+      {
+        title: "The Presentation at The Australian National University (ANU) Student Research Conference",
+        description: "An image of me giving a presentation on my honours research project about animal pose estimation in front of the ANU Student Research Conference audience.",
+        imgUrl: anusrc,
+      },
     ];
     const datavis = [
       {
-        title: "The Hompage of The Data Visualiser",
+        title: "The Homepage of The Data Visualiser",
         description: "The main page of the data visualiser app displayed on a widescreen, consisting of several charts representing data such as gender and profession. Exhibition users can access and interact by clicking on a chart image, which will then lead them to the corresponding charts.",
         imgUrl: homePage,
       },
@@ -106,9 +117,9 @@ export const ProjectFirstPage = () => {
                 }
               </Row>
             <p>
-            Tracking an animal's detailed anatomical structure throughout a period allows scientists to perform studies such as behavioural analysis and motor kinematic studies. Throughout my Honours year and project, I developed a self-supervised pose-estimation pipeline for animals that requires minimal manual annotation and can track semantically meaningful keypoints. Note that the model uses a self-supervised approach, meaning that it can generate learning elements independently and analyse deep patterns in the data without the need for large labelled training data, as in the case of supervised learning. 
+            Tracking an animal's detailed anatomical structure throughout a period allows scientists to perform behavioural analysis and motor kinematic studies. Throughout my Honours year and project, I developed a self-supervised pose-estimation pipeline for animals that requires minimal manual annotation and can track semantically meaningful keypoints. In particular, this pose estimation model is then used to track anatomical features on a larval zebrafish such as the body and the fins. Note that the model uses a self-supervised approach, meaning that it can generate learning elements independently and analyse deep patterns in the data without needing large labelled training data, as supervised learning. 
             <br /><br />The main tools used for this pose estimation project include Pytorch for creating CNN(Convolutional Neural Network); Torchvision for image transformation; and Weights and Biases to monitor and visualise the model output as it trains. Due to the high computing resources needed to train this model, code is developed and executed on a Linux-based HPC(High-Performance Computing) environment on a computing cluster that uses Sylabs singularity containerisation.  This environment is accessed and utilised using SSH and Slurm scripts.
-            <br /><br />I also improved and showed my research skills throughout this project. This encompasses writing a literature review and other thesis sections; demonstrating scientific attitudes; and using LaTeX as a research writing tool and Zotero for reference management. 
+            <br /><br />I further improved my research skills throughout this project. This encompasses writing a literature review and other thesis sections; demonstrating scientific attitudes; and using LaTeX as a research writing tool and Zotero for reference management. At a later stage, I then presented this honours research project at the ANU student research conference. This allows me to improve my public speaking skills and shape my words from complex technical terms to simple phrases understandable by the general audience.
             </p>
               
             </Tab.Pane>
