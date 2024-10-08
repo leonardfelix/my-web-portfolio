@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/my-web-portfolio/static/css/main.ad24e7b2.css",
-    "main.js": "/my-web-portfolio/static/js/main.263a6268.js",
+    "main.js": "/my-web-portfolio/static/js/main.f72dc2f4.js",
     "static/js/453.298f5782.chunk.js": "/my-web-portfolio/static/js/453.298f5782.chunk.js",
     "static/media/banner-bg.png": "/my-web-portfolio/static/media/banner-bg.aa9783c459c69cf0b03f.png",
+    "static/media/anu src.jpg": "/my-web-portfolio/static/media/anu src.5439cb1d871063fb9eb2.jpg",
     "static/media/app example.png": "/my-web-portfolio/static/media/app example.87be96cec5b116db2ff3.png",
     "static/media/homepage.png": "/my-web-portfolio/static/media/homepage.5c431b71bf60ce195ac2.png",
     "static/media/color-sharp.png": "/my-web-portfolio/static/media/color-sharp.bea361cfef80fefc2d1e.png",
@@ -13,6 +14,7 @@
     "static/media/dish search.png": "/my-web-portfolio/static/media/dish search.6f82e2440fd84c7d53de.png",
     "static/media/mobile.jpg": "/my-web-portfolio/static/media/mobile.d8aeade7fdbf1b8e2353.jpg",
     "static/media/age chart.png": "/my-web-portfolio/static/media/age chart.733a9596f9f3f6520de8.png",
+    "static/media/sweep.png": "/my-web-portfolio/static/media/sweep.02f39f95399616763ac7.png",
     "static/media/Media (4).jpeg": "/my-web-portfolio/static/media/Media (4).b3b59645dbdd1876e400.jpeg",
     "static/media/cover page.jpg": "/my-web-portfolio/static/media/cover page.a30e8941b1d02950d91c.jpg",
     "static/media/publish recipe.png": "/my-web-portfolio/static/media/publish recipe.818540089d4c5e788fd2.png",
@@ -41,11 +43,11 @@
     "static/media/arrow2.svg": "/my-web-portfolio/static/media/arrow2.b3d03e1b04ec1904a5658aea5776433c.svg",
     "static/media/arrow1.svg": "/my-web-portfolio/static/media/arrow1.1088f8313e5637897aff2414e5938141.svg",
     "main.ad24e7b2.css.map": "/my-web-portfolio/static/css/main.ad24e7b2.css.map",
-    "main.263a6268.js.map": "/my-web-portfolio/static/js/main.263a6268.js.map",
+    "main.f72dc2f4.js.map": "/my-web-portfolio/static/js/main.f72dc2f4.js.map",
     "453.298f5782.chunk.js.map": "/my-web-portfolio/static/js/453.298f5782.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ad24e7b2.css",
-    "static/js/main.263a6268.js"
+    "static/js/main.f72dc2f4.js"
   ]
 }
