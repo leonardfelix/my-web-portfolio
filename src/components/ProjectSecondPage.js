@@ -12,6 +12,8 @@ import dataDiagram from "../assets/img/projects/database/database diagram.png";
 import vaccineDat from "../assets/img/projects/database/vaccine data.png";
 import distribution from "../assets/img/projects/database/distribution details.png";
 
+import coverPageDeepLearning from "../assets/img/projects/syntheticClassification/deep learning first page.png";
+
 import coverPage from "../assets/img/projects/marineTracking/cover page.jpg";
 
 import music from "../assets/img/projects/music/treble clef.svg";
@@ -56,6 +58,14 @@ export const ProjectSecondPage = () => {
       },
     ];
 
+    const vehicleClassification = [
+      {
+        title: "The Three Method Comparison Cover Page",
+        description: "This image presents the cover page for the second version of the report titled 'Classifying Synthetic Vehicle: A Comparative Study of Deep Neural Networks'",
+        imgUrl: coverPageDeepLearning,
+      },
+    ]
+
     const marineTracking = [
       {
         title: "The Research Proposal Cover Page",
@@ -75,6 +85,9 @@ export const ProjectSecondPage = () => {
           </Nav.Item>
           <Nav.Item>
             <Nav.Link eventKey="second">COVID-19 Database</Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link eventKey="third">Synthetic Vehicle Classification</Nav.Link>
           </Nav.Item>
           <Nav.Item>
             <Nav.Link eventKey="secondlast">Marine Animal Tracking</Nav.Link>
@@ -126,6 +139,30 @@ export const ProjectSecondPage = () => {
             </p>
           </Tab.Pane>
 
+          <Tab.Pane eventKey="third">
+          <h3>Synthetic Vehicle Classification</h3>
+          <Row className="justify-content-center">
+                {
+                  vehicleClassification.map((project, index) => {
+                    return (
+                      <ProjectCard
+                        key={index}
+                        {...project}
+                        />
+                    )
+                  })
+                }
+              </Row>
+            <p>
+            Road vehicles. They are all around us in this modern age, transporting goods and commuters alike. The demand for visual vehicle recognition has risen for applications such as accident detection and traffic surveillance. Unfortunately, due to myriads of traffic, vehicle occlusion occurs frequently and same-vehicle reidentification becomes a crucial task for tracking. Images of real vehicles with variations in light, angle, and distance are sometimes challenging to obtain. Thus synthetic images offer a solution in combination with real datasets as they allow unlimited training data and better model generalisation.
+            <br />< br />Written across two papers are the findings of the best-performing methods of these synthetic vehicle classifications. This small research project details the comparison of three approaches including maximum likelihood classification, simple 2-layer perceptron, and deep learning. The process includes initial dataset analysis and preprocessing such as normalisation, and hyperparameter tuning for deep learning. More detailed explanations and findings can be found in the report encompassing results, discussions, and future work.
+            <br />< br />This project uses Python including libraries popular for data analytics and machine learning such as Numpy, Sklearn, Pandas, and Pytorch. The report itself was written in LaTeX.
+            </p>
+            <Row className="justify-content-center">
+            <button onClick={() => window.location.href = "https://drive.google.com/drive/folders/1pnmzniw6Q0slUdRiGN7JwdDFdcjYAI1l?usp=sharing"}>See Work <ArrowRightCircle size={25} /></button>
+            </Row>
+          </Tab.Pane>
+
           <Tab.Pane eventKey="secondlast">
           <h3>Marine Animal Tracking</h3>
           <Row className="justify-content-center">
@@ -149,6 +186,7 @@ export const ProjectSecondPage = () => {
             <button onClick={() => window.location.href = "https://drive.google.com/file/d/1yawMkKo9ZE79OSIYKcory8AzzDGe7G1I/view?usp=sharing"}>See Proposal <ArrowRightCircle size={25} /></button>
             </Row>
           </Tab.Pane>
+
           <Tab.Pane eventKey="last">
           <h3>Symphony No. 1, Op. 1</h3>
           <div style={{ display: "flex", justifyContent: "center"}}>
