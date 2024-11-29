@@ -1,12 +1,18 @@
 import { useState, SyntheticEvent } from "react";
 import { Col } from "react-bootstrap";
 
-export const ProjectCard = ({ title, description, imgUrl }) => {
+export const ProjectCard = ({ title, description, imgUrl, imageCredit = "" }) => {
   const [vertical, setVertical] = useState(false)
 
   const handeImageLoad = (event: SyntheticEvent) =>{
     const { naturalWidth, naturalHeight } = event.target;
     setVertical(naturalHeight > naturalWidth);
+  }
+
+  if (imageCredit){
+    description = <p>{description}<br/><br/>{imageCredit}</p>
+  } else{
+    description = <p>{description}</p>
   }
 
   return (
@@ -15,7 +21,7 @@ export const ProjectCard = ({ title, description, imgUrl }) => {
         <img src={imgUrl} onLoad={handeImageLoad} />
         <div className="proj-txtx">
           <h4>{title}</h4>
-          <p>{description}</p>
+          {description}
         </div>
       </div>
     </Col>
