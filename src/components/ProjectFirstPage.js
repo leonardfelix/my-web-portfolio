@@ -29,6 +29,7 @@ export const ProjectFirstPage = () => {
         title: "The Presentation at The Australian National University (ANU) Student Research Conference",
         description: "An image of me giving a presentation on my honours research project about animal pose estimation in front of the ANU Student Research Conference audience.",
         imgUrl: anusrc,
+        imageCredit: "Image credits: The 2024 ANU SRC Committee",
       },
     ];
     const datavis = [
@@ -36,11 +37,13 @@ export const ProjectFirstPage = () => {
         title: "The Homepage of The Data Visualiser",
         description: "The main page of the data visualiser app displayed on a widescreen, consisting of several charts representing data such as gender and profession. Exhibition users can access and interact by clicking on a chart image, which will then lead them to the corresponding charts.",
         imgUrl: homePage,
+        imageCredit: "Image credits: Melita Dahl",
       },
       {
         title: "An Example Chart Displaying Age",
-        description: "This figure shows the age chart representation of the gallery portrait data. Each individual face portraits are neatly organised based on their respective people's age, visualising a bar chart. Supporting features such as a dropdown legend, magnification, and navigation to the next chart are also present.",
+        description: "This figure shows the age chart representation of the portrait collection. Each individual face portraits are neatly organised based on their respective people's age, visualising a bar chart. Supporting features such as a dropdown legend, magnification, and navigation to the next chart are also present.",
         imgUrl: ageChart,
+        imageCredit: "Image credits: Melita Dahl",
       },
       {
         title: "The Development Trello Board",
@@ -89,7 +92,7 @@ export const ProjectFirstPage = () => {
               <Nav.Link eventKey="first">Animal Pose Estimation</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link eventKey="second">NPG Data Visualisation</Nav.Link>
+              <Nav.Link eventKey="second">Portrait Data Visualisation</Nav.Link>
             </Nav.Item>
             <Nav.Item>
               <Nav.Link eventKey="third">Mutuals</Nav.Link>
@@ -124,7 +127,7 @@ export const ProjectFirstPage = () => {
               
             </Tab.Pane>
             <Tab.Pane eventKey="second">
-            <h3>National Portrait Gallery (NPG) Data Visualisation</h3>
+            <h3>Portrait Data Visualisation</h3>
             <Row className="justify-content-center">
                 {
                   datavis.map((project, index) => {
@@ -138,10 +141,10 @@ export const ProjectFirstPage = () => {
                 }
               </Row>
               <p>
-              Melita Dahl, a PhD student at The ANU School of Art and Design came up with the idea of making a web data visualiser of portraits from The National Portrait Gallery in Canberra for her doctoral exhibition. Working together with her as a client and a group of dedicated software engineers, we're able to provide technical assistance to accomplish her grand visions.
-              <br /><br />The website visualiser consists of 1219 portraits from the gallery which are then preprocessed using Azure Facial Expression Recognition(FER). These detected faces along with their metadata such as expression, age, and gender are then visualised on various categories appealingly using charts comprised of face portraits. I took part in developing significant main features of the visualiser including a home page where exhibition users can select a chart of their preferences and various redactions of the face portraits such as by gender and facial features. To adjust the website for its main purpose, an art exhibition and another development branch were created to ensure that the visualiser works well on a 4k resolution device.
-              <br /><br />I took on the role of a communication manager in this project and led the team's communication with the client and other external stakeholders. This encompasses giving weekly reports to the client, being the middleman who translates technical terms into simple yet understandable words, and taking initiative in finding solutions when conflicts arise between the two sides. I am also involved in the creation of project management documents, most notably the statement of work that details the scope agreement of this project. As well as the team charter which governs various aspects of the team workflow such as decision-making procedures and ground rules.
-              <br /><br />The application was developed using the Svelte framework and Snowpack for the front end. The face portrait collection along with their data was stored in a spritesheet and JSON file inside the application without linking to an external database which allows for a faster loading time. Git was used to manage this collaborative effort and the use of a staging site hosted on Oracle cloud. Not long after, changes were implemented to remove the staging site and make a versioning system instead on the main production website for the client's comparison purposes. The Trello management board was used to track all task schedules, assignees, and statuses to keep the team well-informed on the project's progress.
+              Melita Dahl, a PhD student at The ANU School of Art and Design came up with the idea of making a web data visualiser from a collection of photographic portraits for her doctoral exhibition. Working together with her as a client and a group of dedicated software engineers, we're able to provide technical assistance to accomplish her grand visions.
+              <br/><br/>The website visualiser consists of 1219 portraits which are then preprocessed using Azure Facial Expression Recognition(FER). These detected faces along with their metadata such as expression, age, and gender are then visualised on various categories appealingly using charts comprised of face portraits. I took part in developing significant main features of the visualiser including a home page where exhibition users can select a chart of their preferences and various redactions of the face portraits such as by gender and facial features. To adjust the website for its main purpose, an art exhibition and another development branch were created to ensure that the visualiser works well on a 4k resolution device.
+              <br/><br/>I took on the role of a communication manager in this project and led the team's communication with the client and other external stakeholders. This encompasses giving weekly reports to the client, being the middleman who translates technical terms into simple yet understandable words, and taking initiative in finding solutions when conflicts arise between the two sides. I am also involved in the creation of project management documents, most notably the statement of work that details the scope agreement of this project. As well as the team charter which governs various aspects of the team workflow such as decision-making procedures and ground rules.
+              <br/><br/>The application was developed using the Svelte framework and Snowpack for the front end. The face portrait collection along with their data was stored in a spritesheet and JSON file inside the application without linking to an external database which allows for a faster loading time. Git was used to manage this collaborative effort and the use of a staging site hosted on Oracle cloud. Not long after, changes were implemented to remove the staging site and make a versioning system instead on the main production website for the client's comparison purposes. The Trello management board was used to track all task schedules, assignees, and statuses to keep the team well-informed on the project's progress.
               </p>
             </Tab.Pane>
 
