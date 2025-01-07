@@ -3,16 +3,16 @@ import { Container, Row, Col } from "react-bootstrap";
 import headerImg from "../assets/img/Media (4).jpeg";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
-import { ArrowRightCircle } from 'react-bootstrap-icons';
 
 export const Banner = () => {
+  // text typing time
+  const period = 100;
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState('');
-  const [delta, setDelta] = useState(300 - Math.random() * 100);
-  const [index, setIndex] = useState(1);
+  const [delta, setDelta] = useState(period);
   const toRotate = [ "Machine Learning Engineer", "Software Developer", "Composer?"  ];
-  const period = 2000;
+
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -35,15 +35,11 @@ export const Banner = () => {
 
     if (!isDeleting && updatedText === fullText) {
       setIsDeleting(true);
-      setIndex(prevIndex => prevIndex - 1);
-      setDelta(period);
+      setDelta(2000);
     } else if (isDeleting && updatedText === '') {
       setIsDeleting(false);
       setLoopNum(loopNum + 1);
-      setIndex(1);
-      setDelta(500);
-    } else {
-      setIndex(prevIndex => prevIndex + 1);
+      setDelta(period);
     }
   }
 

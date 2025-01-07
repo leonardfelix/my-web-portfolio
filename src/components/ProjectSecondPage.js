@@ -93,7 +93,7 @@ export const ProjectSecondPage = () => {
             <Nav.Link eventKey="secondlast">Marine Animal Tracking</Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link eventKey="last">Symphony No. 1, Op. 1</Nav.Link>
+            <Nav.Link eventKey="last">The Degree in Blue, Op. 1</Nav.Link>
           </Nav.Item>
         </Nav>
         <Tab.Content id="slideInUp">
@@ -188,12 +188,12 @@ export const ProjectSecondPage = () => {
           </Tab.Pane>
 
           <Tab.Pane eventKey="last">
-          <h3>Symphony No. 1, Op. 1</h3>
+          <h3>The Degree in Blue, Op. 1</h3>
           <div style={{ display: "flex", justifyContent: "center"}}>
             <img src={music} alt="Treble clef" style={{ width: "20vh" }} />
           </div>
             <h4>
-            <br /><br />Something musical is coming soon.
+            <br /><br />Something musical is coming this February 5.
             </h4>
           </Tab.Pane>
 
