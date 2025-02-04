@@ -16,7 +16,9 @@ import coverPageDeepLearning from "../assets/img/projects/syntheticClassificatio
 
 import coverPage from "../assets/img/projects/marineTracking/cover page.jpg";
 
-import music from "../assets/img/projects/music/treble clef.svg";
+import coverPageMusic from "../assets/img/projects/music/cover page.png"; 
+import timetable from "../assets/img/projects/music/jira timetable.png";
+import score from "../assets/img/projects/music/score.png";
 
 
 
@@ -72,6 +74,19 @@ export const ProjectSecondPage = () => {
         description: "This figure shows the cover and first page of the five page proposal document.",
         imgUrl: coverPage,
       },
+    ]
+
+    const degreeinBlue = [
+      {
+        title: "The Degree in Blue Cover Page",
+        description: "Presented is the cover page of this composition which includes the title, opus number, and composer name. This was made from a photograph of my recent testamur scroll and was edited to incorporate lighting and shadows.",
+        imgUrl: coverPageMusic,
+      },
+      {
+        title: "The Conductor's Score's First Page",
+        description: "The figure shows the beginning piece of the composition for every instrument. Furthermore, details such as dynamics, articulation, tempo, and rehearsal marks are also added to the score.",
+        imgUrl: score,
+      },      
     ]
 
 
@@ -188,13 +203,28 @@ export const ProjectSecondPage = () => {
           </Tab.Pane>
 
           <Tab.Pane eventKey="last">
-          <h3>The Degree in Blue, Op. 1</h3>
-          <div style={{ display: "flex", justifyContent: "center"}}>
-            <img src={music} alt="Treble clef" style={{ width: "20vh" }} />
-          </div>
-            <h4>
-            <br /><br />Something musical is coming this February 5.
-            </h4>
+          <h3>The Degree in Blue</h3>
+          <Row className="justify-content-center">
+                {
+                  degreeinBlue.map((project, index) => {
+                    return (
+                      <ProjectCard
+                        key={index}
+                        {...project}
+                        />
+                    )
+                  })
+                }
+              </Row>
+            <p>
+            University graduation has always been a significant event in one's life; the accomplishment of a degree from years of enthusiasm and the beginning of adulthood. A myriad of things happened during this period. The sense of gratitude for the knowledge learned, fond memories of close companions, and gratefulness for all the amazing experiences and opportunities. Nonetheless, the fear of the uncertainties of the future lingers, the disappointment of application rejections, and close connections slowly fade away as we walk our separate paths. With this stirring of emotions, poured into this musical composition are my stories depicting the joy and challenges of a recent graduate.
+            <br /><br />This 9-minute orchestral piece features orchestration for strings, brass, woodwinds, percussion, and organ. With this music, I wanted to motivate others experiencing similar conditions, that facing changes and rejections is a normal part of life. Instead of dwelling on our worries and anxiety, it's better to continuously learn and improve to eventually prepare the best of ourselves when we reach our goals. 
+            <br /><br />The song was composed using Cubase utilising the DAW (Digital Audio Workstation) for generating the audio recording and the score editor. Furthermore, I made a booklet demonstrating my graphic design skills for the composition encompassing a cover page, piece description, listening guide, and the conductor's score. This is one of the biggest non-computing projects I've worked on, which expose me to new skills and perspectives which I'm curious about. This experience also demonstrated my range of skills and capabilities of learning new things quickly in this case music composition and graphic design. Jira was used as a project management tool to deliver the product on time as was planned for the release date of 5th February 2025. 
+            <br /><br />Furthermore, I haven't had the experience to play all the instruments used in this composition and wanted to continuously improve. Hence, to those who play the instruments, please do kindly let me know if I have written something impossible to be played.
+            </p>
+            <Row className="justify-content-center">
+            <button onClick={() => window.location.href = "https://drive.google.com/file/d/1uYrRtxldi1SrMIp8yS8yagKewrMXXZaq/view?usp=sharing"}>See Booklet <ArrowRightCircle size={25} /></button>
+            </Row>
           </Tab.Pane>
 
         </Tab.Content>
