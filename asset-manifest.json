@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/my-web-portfolio/static/css/main.e1b8c54c.css",
-    "main.js": "/my-web-portfolio/static/js/main.7b358e48.js",
+    "main.js": "/my-web-portfolio/static/js/main.78478932.js",
     "static/js/453.298f5782.chunk.js": "/my-web-portfolio/static/js/453.298f5782.chunk.js",
     "static/media/banner-bg.png": "/my-web-portfolio/static/media/banner-bg.aa9783c459c69cf0b03f.png",
+    "static/media/cover page.png": "/my-web-portfolio/static/media/cover page.a5a3f14a5ed2c5e9aa12.png",
     "static/media/anu src.jpg": "/my-web-portfolio/static/media/anu src.5439cb1d871063fb9eb2.jpg",
     "static/media/app example.png": "/my-web-portfolio/static/media/app example.87be96cec5b116db2ff3.png",
     "static/media/homepage.png": "/my-web-portfolio/static/media/homepage.5c431b71bf60ce195ac2.png",
@@ -18,6 +19,7 @@
     "static/media/Media (4).jpeg": "/my-web-portfolio/static/media/Media (4).b3b59645dbdd1876e400.jpeg",
     "static/media/deep learning first page.png": "/my-web-portfolio/static/media/deep learning first page.e44a8692ab8acd3d1a4c.png",
     "static/media/cover page.jpg": "/my-web-portfolio/static/media/cover page.a30e8941b1d02950d91c.jpg",
+    "static/media/jira timetable.png": "/my-web-portfolio/static/media/jira timetable.70108e413899e25786a8.png",
     "static/media/publish recipe.png": "/my-web-portfolio/static/media/publish recipe.818540089d4c5e788fd2.png",
     "static/media/register.png": "/my-web-portfolio/static/media/register.a3f0f3610a12684a03c1.png",
     "static/media/distribution details.png": "/my-web-portfolio/static/media/distribution details.4dcc691b2a115dfcb80c.png",
@@ -28,6 +30,7 @@
     "static/media/CentraNo2-Medium.ttf": "/my-web-portfolio/static/media/CentraNo2-Medium.f94be5b326d78bb32b95.ttf",
     "static/media/CentraNo2-Book.ttf": "/my-web-portfolio/static/media/CentraNo2-Book.2b143fa4b734a3584043.ttf",
     "static/media/footer-bg.png": "/my-web-portfolio/static/media/footer-bg.7bd67c0f73571d0acc02.png",
+    "static/media/score.png": "/my-web-portfolio/static/media/score.5f5dbf43f6bbe6db0364.png",
     "static/media/vaccine data.png": "/my-web-portfolio/static/media/vaccine data.f5471c8a9d763f1c1df5.png",
     "static/media/contact-img.svg": "/my-web-portfolio/static/media/contact-img.62aa99e0f3b968b5d1ce9eb047f34fc7.svg",
     "static/media/revicons.eot": "/my-web-portfolio/static/media/revicons.a77de540a38981833f9e.eot",
@@ -36,7 +39,6 @@
     "static/media/meter2.svg": "/my-web-portfolio/static/media/meter2.a0050a378a929877ac8144049ee0a1bf.svg",
     "static/media/meter1.svg": "/my-web-portfolio/static/media/meter1.c61a2fc3fdd79d551b751c6c0f890ab6.svg",
     "static/media/meter3.svg": "/my-web-portfolio/static/media/meter3.2eda919df32db1af75a222eb99d3a931.svg",
-    "static/media/treble clef.svg": "/my-web-portfolio/static/media/treble clef.8ae6383862183a99579ab288d2b2f7e8.svg",
     "static/media/github.svg": "/my-web-portfolio/static/media/github.f68353b1036ee0460dd5639cb7916587.svg",
     "static/media/logo.svg": "/my-web-portfolio/static/media/logo.3c6c479cfa1d154dbfccd4d5f91320f4.svg",
     "index.html": "/my-web-portfolio/index.html",
@@ -44,11 +46,11 @@
     "static/media/arrow2.svg": "/my-web-portfolio/static/media/arrow2.b3d03e1b04ec1904a5658aea5776433c.svg",
     "static/media/arrow1.svg": "/my-web-portfolio/static/media/arrow1.1088f8313e5637897aff2414e5938141.svg",
     "main.e1b8c54c.css.map": "/my-web-portfolio/static/css/main.e1b8c54c.css.map",
-    "main.7b358e48.js.map": "/my-web-portfolio/static/js/main.7b358e48.js.map",
+    "main.78478932.js.map": "/my-web-portfolio/static/js/main.78478932.js.map",
     "453.298f5782.chunk.js.map": "/my-web-portfolio/static/js/453.298f5782.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e1b8c54c.css",
-    "static/js/main.7b358e48.js"
+    "static/js/main.78478932.js"
   ]
 }
