@@ -3,6 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import headerImg from "../assets/img/Media (4).jpeg";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import MediaQuery from "react-responsive";
 
 export const Banner = () => {
   // text typing time
@@ -45,9 +46,22 @@ export const Banner = () => {
 
   return (
     <section className="banner" id="home">
+
+      {/* Generate different elements based on if viewed on destop or mobile, for centre alignment in mobile and column in desktop */}
+      <MediaQuery maxWidth={768}>
+        <div style={{ display: "flex", justifyContent: "center"}}>
+          <TrackVisibility>
+            {({ isVisible }) =>
+              <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
+                <img src={headerImg} alt="Header Img"/>
+              </div>}
+          </TrackVisibility>
+        </div>
+      </MediaQuery>
+      
       <Container>
         <Row>
-          <Col xs={8} md={8} xl={8}>
+          <Col xs={12} md={8} xl={8}>
             <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
@@ -62,16 +76,22 @@ export const Banner = () => {
               </div>}
             </TrackVisibility>
           </Col>
-          <Col xs={3} md={3} xl={3}>
-            <TrackVisibility>
-              {({ isVisible }) =>
-                <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                  <img src={headerImg} alt="Header Img"/>
-                </div>}
-            </TrackVisibility>
-          </Col>
+          
+          {/* Destkop element version */}
+          <MediaQuery minWidth={768}>
+            <Col xs={4} md={3} xl={3}>
+              <TrackVisibility>
+                {({ isVisible }) =>
+                  <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
+                    <img src={headerImg} alt="Header Img"/>
+                  </div>}
+              </TrackVisibility>
+            </Col>
+          </MediaQuery>
+          
         </Row>
       </Container>
+      
     </section>
   )
 }

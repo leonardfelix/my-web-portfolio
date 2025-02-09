@@ -233,7 +233,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	border-color: transparent;
 }
 
+/* Phone Resolution*/
+@media (max-width: 768px) {
+  .navbar-brand-text{
+    font-size:25px;
+  }
+}
+
 /************ Banner Css ************/
+
 .banner {
   margin-top: 0;
   height: 100vh;
@@ -266,7 +274,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
-  width: 96%;
 }
 .banner button {
   color: #fff;
@@ -306,6 +313,28 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
+}
+
+/* Phone Resolution*/
+@media (max-width: 768px) {
+  .banner {
+    margin-top: 0;
+    height: 100vh;
+    padding: 10vh 0 0 0;
+  }
+  .banner h1 {
+    font-size: 28px;    
+  }
+  .banner .align-element{
+  text-align: center;
+  justify-content: center;
+  margin-top: 15px;
+  }
+  .banner img {
+    margin-left: 0px;
+    width: 15vh;
+  }
+  
 }
 
 /************ Skills Css ************/
@@ -350,7 +379,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Projects Css ************/
 .project {
-  padding: 80px 0 120px 0;
+  padding: 7vh 0 11vh 0;
   position: relative;
   background-color: black;
 }
@@ -400,7 +429,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   overflow: hidden;
 }
 .project .nav.nav-pills .nav-item {
-  width: 20%;
+  flex: 1; /* Ensures equal width depending on the number of tab*/
+  display: flex;
 }
 .project .nav.nav-pills .nav-link {
   background-color: transparent;
@@ -415,6 +445,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   transition: 0.3s ease-in-out;
   text-align: center;
   z-index: 0;
+
+  /* Line seperator for every tab */
+  border: 1px solid rgba(255, 255, 255, 0.5);
 }
 .project .nav.nav-pills .nav-link::before {
     content: "";
@@ -430,46 +463,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .project .nav.nav-pills .nav-link.active::before {
     width: 100% !important;
 }
-.project .nav.nav-pills .nav-link.active {
-    border: 1px solid rgba(255, 255, 255, 1);
-}
 .nav-link#projects-tabs-tab-first {
-  border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 55px 0px 0px 55px;
 }
-.nav-link#projects-tabs-tab-second {
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-  border: 1px solid rgba(255, 255, 255, 0.5);
-}
-.nav-link#projects-tabs-tab-third {
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-  border: 1px solid rgba(255, 255, 255, 0.5);
-}
-.nav-link#projects-tabs-tab-fourth {
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-  border: 1px solid rgba(255, 255, 255, 0.5);
-}
-.nav-link#projects-tabs-tab-secondlast {
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-}
 .nav-link#projects-tabs-tab-last {
-  border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 0 55px 55px 0;
-}
-.project .nav.nav-pills-custom {
-  width: 100%;
-  margin: 0 auto;
-  border-radius: 50px;
-  background-color: rgb(255 255 255 / 10%);
-  overflow: hidden;
-}
-.project .nav.nav-pills-custom .nav-item {
-  width: 20%;
-}
+} 
+
 .proj-imgbx {
   position: relative;
   border-radius: 10px;
@@ -523,7 +523,28 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -4;
 }
 
-/************ Projects Css ************/
+/* Phone Resolution*/
+@media (max-width: 768px) {
+  .project p {
+    font-size: 15px;
+    width: 90%;
+  }
+  .project .nav.nav-pills .nav-link {
+
+    font-size: 10px;
+
+  }
+  .project .nav.nav-pills .nav-link {
+    min-height: 80px;
+  
+    /* Line seperator for every tab */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/************ Contact Css ************/
 .contact {
   background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
   padding: 60px 0 60px 0;
