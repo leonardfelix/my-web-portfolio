@@ -21,7 +21,9 @@ export const ProjectCard = ({ title, description, imgUrl, imageCredit = "" }) =>
         <img src={imgUrl} onLoad={handeImageLoad} />
         <div className="proj-txtx">
           <h4>{title}</h4>
-          {description}
+            <div className="projectcard-description">
+              {description}
+            </div>
         </div>
       </div>
     </Col>
