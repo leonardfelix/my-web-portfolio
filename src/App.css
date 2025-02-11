@@ -115,7 +115,7 @@ span.navbar-text {
 }
 .social-icon {
     display: inline-block;
-    margin-left: 2vh;
+    margin-left: 2vw;
 }
 .social-icon a {
     width: 42px;
@@ -186,6 +186,8 @@ span.navbar-text {
 }
 .navbar-brand-text{
   color: #ffffff;
+  font-size: 2vw;
+
 }
 nav.navbar .navbar-toggler:active,
 nav.navbar .navbar-toggler:focus {
@@ -234,9 +236,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /* Phone Resolution*/
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .navbar-brand-text{
-    font-size:25px;
+    font-size:5.5vw;
   }
 }
 
@@ -323,7 +325,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     padding: 10vh 0 0 0;
   }
   .banner h1 {
-    font-size: 28px;    
+    font-size: 3vh;    
+  }
+  .banner p {
+    font-size: 1.9vh;
   }
   .banner .align-element{
   text-align: center;
@@ -443,6 +448,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-align: center;
   z-index: 0;
 
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   /* Line seperator for every tab */
   border: 1px solid rgba(255, 255, 255, 0.5);
 }
@@ -495,6 +505,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   transition: 0.5s ease-in-out;
   opacity: 0;
   width: 100%;
+
 }
 .proj-imgbx:hover .proj-txtx {
   top: 50%;
@@ -512,6 +523,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-align: center;
   padding-top: 1vh;
 }
+.projectcard-description{
+  overflow-y: auto;
+}
 
 .background-image-right {
   top: 20%;
@@ -523,28 +537,24 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /* Desktop Resolution*/
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .project p {
     margin:3vh auto auto auto;
   }
 }
 
 /* Phone Resolution*/
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .project p {
     font-size: 15px;
     width: 90%;
-  }
-  .project .nav.nav-pills .nav-link {
-
-    font-size: 10px;
-
   }
   .project .nav.nav-pills .nav-link {
     min-height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 10px;
   }
 
   /* Project Card Style*/
@@ -557,10 +567,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   .projectcard p {
     font-size: 12px;
   }
-  .projectcard-description{
-    max-height: 150px;
-    overflow-y: auto;
-  }
+  
 }
 
 /************ Contact Css ************/
