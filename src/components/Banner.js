@@ -48,7 +48,7 @@ export const Banner = () => {
     <section className="banner" id="home">
 
       {/* Generate different elements based on if viewed on destop or mobile, for centre alignment in mobile and column in desktop */}
-      <MediaQuery maxWidth={768}>
+      <MediaQuery maxWidth={767}>
         <div style={{ display: "flex", justifyContent: "center"}}>
           <TrackVisibility>
             {({ isVisible }) =>
